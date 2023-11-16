@@ -1670,7 +1670,7 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 155px;
+  width: 150px;
   height: 36px;
 }
 
@@ -1732,7 +1732,7 @@ body.menu-is-open {
   display: block;
   height: 1px;
   width: 110px;
-  background-color: #793ea5;
+  background-color: #ffffff;
   position: absolute;
   top: 50%;
   right: 0;
@@ -2880,23 +2880,27 @@ html.no-csstransitions .home-content__main {
   margin-top: 0;
 }
 
-.item-service:nth-child(2n+1) {
-  padding-right: 50px;
+.item-service {
+  padding-right: 100px;
+  
 }
 
-.item-service:nth-child(2n+2) {
-  padding-left: 50px;
+.item-service{
+  padding-left: 0px;
 }
 
 .item-service__text {
   margin-left: 7.2rem;
 }
 
-.item-service__icon {
-  float: left;
-  color: #793ea5;
+.item-service__icon{
+  float: right;
+  color: #ffffff;
   font-size: 4.5rem;
   margin-top: -1.8rem;
+  background-image: url(image/headphones.svg);
+  background-image: url(image/microfone_roxo.png);
+  
 }
 
 /* ------------------------------------------------------------------- 
@@ -3690,6 +3694,10 @@ html.no-csstransitions .home-content__main {
 
 .contact-social li:last-child {
   margin: 0;
+}
+
+textarea{
+  resize: none;
 }
 
 /* ------------------------------------------------------------------- 
