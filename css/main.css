@@ -1,63 +1,4 @@
-/* =================================================================== 
- *
- *  Sublime v1.0 Main Stylesheet
- *  06-10-2018
- *  ------------------------------------------------------------------
- *
- *  TOC:
- *  # base style overrides
- *    ## links
- *  # typography & general theme styles
- *    ## Lists
- *    ## responsive video container
- *    ## floated image
- *    ## tables
- *    ## Spacing 
- *  # preloader
- *  # forms
- *    ## Style Placeholder Text
- *    ## Change Autocomplete styles
- *  # buttons
- *  # additional components
- *    ## alert box
- *    ## additional typo styles
- *    ## skillbars
- *  # reusable and common theme styles
- *    ## display headings
- *    ## section header
- *    ## grid overlay
- *  # header styles
- *    ## header logo
- *    ## main navigation
- *    ## mobile menu toggle 
- *  # home
- *    ## home content
- *    ## home video link
- *    ## home buttons
- *    ## home scroll
- *    ## home social
- *    ## home animations
- *  # about
- *    ## about process
- *  # services  
- *    ## services list
- *  # works
- *    ## bricks/masonry
- *  # clients
- *  # testimonials
- *  # contact
- *    ## contact social
- *  # footer
- *    ## copyright
- *    ## go top
- *
- * =================================================================== */
 
-
-/* ===================================================================
- * # base style overrides
- *
- * ------------------------------------------------------------------- */
 html {
   font-size: 10px;
 }
@@ -86,9 +27,6 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## links
- * ------------------------------------------------------------------- */
 a {
   color: #793ea5;
   -webkit-transition: all 0.3s ease-in-out;
@@ -106,11 +44,6 @@ a:active {
   outline: 0;
 }
 
-
-/* ===================================================================
- * # typography & general theme styles
- * 
- * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -342,7 +275,7 @@ dfn[title] {
 }
 
 mark {
-  background: #ffd900;
+  background:  #793ea5;
   color: #000000;
 }
 
@@ -354,9 +287,6 @@ hr {
   height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Lists
- * ------------------------------------------------------------------- */
 ol {
   list-style: decimal;
 }
@@ -414,9 +344,6 @@ dd {
   margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## responsive video container
- * ------------------------------------------------------------------- */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -435,9 +362,6 @@ dd {
   height: 100%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## floated image
- * ------------------------------------------------------------------- */
 img.pull-right {
   margin: 1.5rem 0 0 3rem;
 }
@@ -446,9 +370,6 @@ img.pull-left {
   margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## tables
- * ------------------------------------------------------------------- */
 table {
   border-width: 0;
   width: 100%;
@@ -489,9 +410,6 @@ td:last-child {
   -webkit-overflow-scrolling: touch;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Spacing 
- * ------------------------------------------------------------------- */
 button,
 .btn {
   margin-bottom: 1.2rem;
@@ -518,11 +436,6 @@ form,
   margin-bottom: 3rem;
 }
 
-
-/* ===================================================================
- * # preloader - (_preloader-dots.scss)
- *
- * ------------------------------------------------------------------- */
 #preloader {
   position: fixed;
   top: 0;
@@ -573,7 +486,6 @@ form,
   left: -15px;
 }
 
-/* dots jump */
 .dots-jump > div {
   -webkit-animation: dots-jump 1.2s infinite ease;
   animation: dots-jump 1.2s infinite ease;
@@ -618,7 +530,6 @@ form,
 
 }
 
-/* dots fade */
 .dots-fade > div {
   -webkit-animation: dots-fade 1.6s infinite ease;
   animation: dots-fade 1.6s infinite ease;
@@ -663,7 +574,6 @@ form,
 
 }
 
-/* dots pulse */
 .dots-pulse > div {
   -webkit-animation: dots-pulse 1.2s infinite ease;
   animation: dots-pulse 1.2s infinite ease;
@@ -714,11 +624,6 @@ form,
 
 }
 
-
-/* ===================================================================
- * # forms
- *
- * ------------------------------------------------------------------- */
 fieldset {
   border: none;
 }
@@ -798,7 +703,6 @@ select {
   transition: all 0.15s ease-in-out;
 }
 
-/* IE9 and below */
 .oldie .cl-custom-select::after {
   display: none;
 }
@@ -850,44 +754,32 @@ label > input[type="radio"] {
   top: .15rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Style Placeholder Text
- * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
-
-  /* WebKit, Blink, Edge */
   color: rgba(255, 255, 255, 0.4);
 }
 
 :-moz-placeholder {
-
-  /* Mozilla Firefox 4 to 18 */
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
 ::-moz-placeholder {
-
-  /* Mozilla Firefox 19+ */
   color: rgba(255, 255, 255, 0.4);
   opacity: 1;
 }
 
 :-ms-input-placeholder {
 
-  /* Internet Explorer 10-11 */
   color: rgba(255, 255, 255, 0.4);
 }
 
 ::-ms-input-placeholder {
 
-  /* Microsoft Edge */
   color: rgba(255, 255, 255, 0.4);
 }
 
 ::placeholder {
 
-  /* Most modern browsers support this now. */
   color: rgba(255, 255, 255, 0.4);
 }
 
@@ -895,9 +787,6 @@ label > input[type="radio"] {
   color: rgba(255, 255, 255, 0.4) !important;
 }
 
-/* ------------------------------------------------------------------- 
- * ## Change Autocomplete styles in Chrome
- * ------------------------------------------------------------------- */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus
@@ -912,11 +801,6 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
-
-/* ===================================================================
- * # buttons
- *
- * ------------------------------------------------------------------- */
 .btn,
 button,
 input[type="submit"],
@@ -959,8 +843,6 @@ input[type="button"]:focus {
   outline: 0;
 }
 
-/* button primary
- * ------------------------------------------------- */
 .btn.btn--primary,
 button.btn--primary,
 input[type="submit"].btn--primary,
@@ -985,8 +867,6 @@ input[type="button"].btn--primary:focus {
   border-color: #6b3792;
 }
 
-/* button modifiers
- * ------------------------------------------------- */
 .btn.full-width,
 button.full-width {
   width: 100%;
@@ -1032,15 +912,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-
-/* =================================================================== 
- * # additional components
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## alert box - (_alert-box.scss)
- * ------------------------------------------------------------------- */
 .alert-box {
   padding: 2.1rem 4rem 2.1rem 3rem;
   position: relative;
@@ -1083,12 +954,6 @@ input::-moz-focus-inner {
   color: #bba31b;
 }
 
-/* ------------------------------------------------------------------- 
- * ## additional typo styles - (_additional-typo.scss)
- * ------------------------------------------------------------------- */
-
-/* drop cap 
- * ----------------------------------------------- */
 .drop-cap:first-letter {
   float: left;
   margin: 0;
@@ -1102,8 +967,6 @@ input::-moz-focus-inner {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line definition style 
- * ----------------------------------------------- */
 .lining dt,
 .lining dd {
   display: inline;
@@ -1129,8 +992,6 @@ input::-moz-focus-inner {
   margin-left: -0.2em;
 }
 
-/* dictionary definition style 
- * ----------------------------------------------- */
 .dictionary-style dt {
   display: inline;
   counter-reset: definitions;
@@ -1150,18 +1011,6 @@ input::-moz-focus-inner {
   content: counter(definitions, decimal) ". ";
 }
 
-/** 
- * Pull Quotes
- * -----------
- * markup:
- *
- * <aside class="pull-quote">
- *    <blockquote>
- *      <p></p>
- *    </blockquote>
- *  </aside>
- *
- * --------------------------------------------------------------------- */
 .pull-quote {
   position: relative;
   padding: 2.1rem 3rem 2.1rem 0px;
@@ -1196,18 +1045,6 @@ input::-moz-focus-inner {
   content: none;
 }
 
-/** 
- * Stats Tab
- * ---------
- * markup:
- *
- * <ul class="stats-tabs">
- *    <li><a href="#">[value]<em>[name]</em></a></li>
- *  </ul>
- *
- * Extend this object into your markup.
- *
- * --------------------------------------------------------------------- */
 .stats-tabs {
   padding: 0;
   margin: 3rem 0;
@@ -1248,9 +1085,6 @@ input::-moz-focus-inner {
   font-style: normal;
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars  - (_skillbars.scss)
- * ------------------------------------------------------------------- */
 .skill-bars {
   list-style: none;
   margin: 6rem 0 3rem;
@@ -1389,11 +1223,6 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
-
-/* ===================================================================
- * # reusable and common theme styles
- *
- * ------------------------------------------------------------------- */
 body.menu-is-open {
   overflow: hidden;
 }
@@ -1414,9 +1243,6 @@ body.menu-is-open {
   background-color: #0f0f0f;
 }
 
-/* ------------------------------------------------------------------- 
- * ## display headings
- * ------------------------------------------------------------------- */
 .display-1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -1447,9 +1273,6 @@ body.menu-is-open {
   margin-bottom: 2.4rem;
 }
 
-/* ------------------------------------------------------------------- 
- * ## section header
- * ------------------------------------------------------------------- */
 .section-header.has-bottom-sep {
   padding-bottom: 1.5rem;
   position: relative;
@@ -1470,9 +1293,6 @@ body.menu-is-open {
   transform: translateX(-50%);
 }
 
-/* ------------------------------------------------------------------- 
- * ## grid overlay
- * ------------------------------------------------------------------- */
 .grid-overlay {
   display: block;
   content: "";
@@ -1518,10 +1338,6 @@ body.menu-is-open {
   left: 50%;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * reusable and common theme styles
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1600px) {
   .grid-overlay {
     border-right: none !important;
@@ -1630,11 +1446,6 @@ body.menu-is-open {
 
 }
 
-
-/* ===================================================================
- * # header styles
- *
- * ------------------------------------------------------------------- */
 .s-header {
   z-index: 500;
   width: 100%;
@@ -1644,9 +1455,6 @@ body.menu-is-open {
   top: 21px;
 }
 
-/* -------------------------------------------------------------------
- * ## header logo
- * ------------------------------------------------------------------- */
 .header-logo {
   z-index: 501;
   display: inline-block;
@@ -1670,13 +1478,10 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 150px;
-  height: 36px;
+  width: 75px;
+  height: 75px;
 }
 
-/* ------------------------------------------------------------------- 
- * ## main navigation 
- * ------------------------------------------------------------------- */
 .header-nav {
   z-index: 600;
   font-size: 1.6rem;
@@ -1861,8 +1666,6 @@ body.menu-is-open {
   transform: rotate(45deg);
 }
 
-/* menu is open
- * ----------------------------------------------- */
 .menu-is-open .header-nav {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -1886,9 +1689,6 @@ body.menu-is-open {
   left: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * ## mobile menu toggle 
- * ------------------------------------------------------------------- */
 .header-menu-toggle {
   width: 48px;
   height: 45px;
@@ -1941,10 +1741,6 @@ body.menu-is-open {
   bottom: -9px;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * header
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .header-logo {
     left: 60px;
@@ -2049,11 +1845,6 @@ body.menu-is-open {
 
 }
 
-
-/* ===================================================================
- * # home
- *
- * ------------------------------------------------------------------- */
 .s-home {
   width: 100%;
   height: 100vh;
@@ -2099,9 +1890,6 @@ body.menu-is-open {
   background: #000000;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home content
- * ------------------------------------------------------------------- */
 .home-content {
   display: table-cell;
   vertical-align: middle;
@@ -2138,9 +1926,6 @@ body.menu-is-open {
   text-align: center;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home video link
- * ------------------------------------------------------------------- */
 .home-content__video {
   display: inline-block;
   margin-top: 4.2rem;
@@ -2191,9 +1976,6 @@ body.menu-is-open {
   background-color: #6b3792;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home buttons
- * ------------------------------------------------------------------- */
 .home-content__button {
   margin-top: 7.8rem;
   position: relative;
@@ -2229,9 +2011,6 @@ body.menu-is-open {
   border-color: #080a0c;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home scroll
- * ------------------------------------------------------------------- */
 .home-content__scroll {
   position: absolute;
   right: 9.5rem;
@@ -2272,9 +2051,6 @@ body.menu-is-open {
   top: 50%;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home social
- * ------------------------------------------------------------------- */
 .home-social {
   list-style: none;
   font-family: "Nunito Sans", sans-serif;
@@ -2364,8 +2140,6 @@ body.menu-is-open {
   transform: scale(1);
 }
 
-/* animate .home-content__main
- * ------------------------------------------------------------------- */
 html.ss-preload .home-content__main {
   opacity: 0;
 }
@@ -2380,11 +2154,6 @@ html.no-csstransitions .home-content__main {
   opacity: 1;
 }
 
-/* ------------------------------------------------------------------- 
- * ## home animations
- * ------------------------------------------------------------------- */
-
-/* fade in */
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -2419,7 +2188,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* fade out */
 @-webkit-keyframes fadeOut {
   from {
     opacity: 1;
@@ -2448,10 +2216,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * home
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1600px) {
   .home-content h1 {
     font-size: 17rem;
@@ -2723,11 +2487,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
 .s-about {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -2735,9 +2494,6 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
-/* ------------------------------------------------------------------- 
- * ## about process
- * ------------------------------------------------------------------- */
 .process {
   margin-top: 6.6rem;
   counter-reset: ctr;
@@ -2782,10 +2538,6 @@ html.no-csstransitions .home-content__main {
   padding-left: 30px;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .item-process:nth-child(2n+1) {
     padding-right: 25px;
@@ -2854,20 +2606,12 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # services
- *
- * ------------------------------------------------------------------- */
 .s-services {
   padding-top: 18rem;
   padding-bottom: 18rem;
   position: relative;
 }
 
-/* ------------------------------------------------------------------- 
- * ## services list
- * ------------------------------------------------------------------- */
 .services {
   margin-top: 9rem;
 }
@@ -2903,10 +2647,6 @@ html.no-csstransitions .home-content__main {
   
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * services
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .services {
     max-width: 1000px;
@@ -2988,11 +2728,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # works
- *
- * ------------------------------------------------------------------- */
 .s-works {
   padding-top: 18rem;
   padding-bottom: 18rem;
@@ -3016,9 +2751,6 @@ html.no-csstransitions .home-content__main {
   background-size: 760px 380px;
 }
 
-/* ------------------------------------------------------------------- 
- * ## bricks/masonry
- * ------------------------------------------------------------------- */
 .masonry-wrap {
   margin-top: 7.2rem;
   max-width: 1100px;
@@ -3184,8 +2916,6 @@ html.no-csstransitions .home-content__main {
   color: #000000;
 }
 
-/* on hover 
- * ----------------------------------------------- */
 .item-folio:hover .item-folio__thumb a::before {
   opacity: 1;
   visibility: visible;
@@ -3214,10 +2944,6 @@ html.no-csstransitions .home-content__main {
   transform: translate3d(0, 0, 0);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * works
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .s-works {
     padding-top: 15rem;
@@ -3262,11 +2988,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # clients
- *
- * ------------------------------------------------------------------- */
 .s-clients {
   padding-top: 16.2rem;
   padding-bottom: 15rem;
@@ -3317,10 +3038,6 @@ html.no-csstransitions .home-content__main {
   padding: 0 1.5rem;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * clients
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1000px) {
   .s-clients {
     padding-top: 15rem;
@@ -3388,11 +3105,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # testimonials
- *
- * ------------------------------------------------------------------- */
 .s-testimonials {
   padding-top: 16.2rem;
   padding-bottom: 21rem;
@@ -3513,10 +3225,6 @@ html.no-csstransitions .home-content__main {
   letter-spacing: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .testimonials__slider {
     font-size: 3.3rem;
@@ -3599,11 +3307,6 @@ html.no-csstransitions .home-content__main {
 
 }
 
-
-/* ===================================================================
- * # contact
- *
- * ------------------------------------------------------------------- */
 .s-contact {
   padding-top: 16.2rem;
   padding-bottom: 21rem;
@@ -3666,9 +3369,6 @@ html.no-csstransitions .home-content__main {
   border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-/* ------------------------------------------------------------------- 
- * ## contact social
- * ------------------------------------------------------------------- */
 .contact-social {
   list-style: none;
   display: inline-block;
@@ -3700,10 +3400,6 @@ textarea{
   resize: none;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * contact
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
   .contact-main {
     font-size: 3.1rem;
@@ -3821,10 +3517,6 @@ textarea{
 
 }
 
-/* ===================================================================
- * # footer
- *
- * ------------------------------------------------------------------- */
 footer {
   padding-top: 9rem;
   padding-bottom: 6rem;
@@ -3839,9 +3531,6 @@ footer a {
   color: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
- * ## copyright
- * ------------------------------------------------------------------- */
 .ss-copyright span {
   font-size: 16px;
   display: inline-block;
@@ -3879,9 +3568,6 @@ footer a {
   z-index: 2;
 }
 
-/* ------------------------------------------------------------------- 
- * ## go top
- * ------------------------------------------------------------------- */
 .ss-go-top a::before {
   content: "";
   display: block;
@@ -3902,10 +3588,6 @@ footer a {
   background-color: #2d173d;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
 @media only screen and (max-width:600px) {
   .ss-copyright span {
     display: block;
@@ -3943,5 +3625,3 @@ footer a {
   }
 
 }
-
-/*# sourceMappingURL=main.css.map */
